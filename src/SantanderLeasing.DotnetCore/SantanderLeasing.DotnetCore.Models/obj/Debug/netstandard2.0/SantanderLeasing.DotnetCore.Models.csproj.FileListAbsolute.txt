@@ -7,3 +7,12 @@ C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetC
 C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.csproj.CoreCompileInputs.cache
 C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.dll
 C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.pdb
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.deps.json
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.dll
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.pdb
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.csprojAssemblyReference.cache
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.AssemblyInfoInputs.cache
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.AssemblyInfo.cs
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.csproj.CoreCompileInputs.cache
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.dll
+C:\Users\marci\Projects\cts-santander-leasing-csharp\src\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.Models\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.pdb

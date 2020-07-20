@@ -23,5 +23,10 @@ namespace SantanderLeasing.DotnetCore.Models
         {
             throw new NotImplementedException();
         }
+        
+        public override string ToString()
+        {
+            return Id + " " + FirstName + " " + LastName + " " + Gender;
+        }
     }
 }

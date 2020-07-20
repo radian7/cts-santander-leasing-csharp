@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj": {}
+    "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj": {
+    "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj",
+        "projectUniqueName": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj",
         "projectName": "SantanderLeasing.DotnetCore.Api",
-        "projectPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj",
+        "projectPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\obj\\",
+        "outputPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -35,11 +35,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj": {
-                "projectPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj"
+              "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj": {
+                "projectPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj"
               },
-              "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj": {
-                "projectPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj"
+              "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj": {
+                "projectPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj": {
+    "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj",
+        "projectUniqueName": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj",
         "projectName": "SantanderLeasing.DotnetCore.IServices",
-        "projectPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj",
+        "projectPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\obj\\",
+        "outputPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -105,8 +105,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj": {
-                "projectPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj"
+              "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj": {
+                "projectPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj": {
+    "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj",
+        "projectUniqueName": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj",
         "projectName": "SantanderLeasing.DotnetCore.Models",
-        "projectPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj",
+        "projectPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\SantanderLeasing.DotnetCore.Models.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\obj\\",
+        "outputPath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IUO+nO4bcwMIS+++2eD8UblTOp0pa/3DIG+hS9L4aUNqNaN670ufvvwH/QFPKg7oj2TL+TjaRKzHuAClndGmVg==",
+  "dgSpecHash": "wXjjQPZPzkynl29XXvEi5JfJkTibAxoadKta4i/I60Pzc69JX+gK6fVlu0N3mwcWmNRpCTm/wNEkXcvgMGUR4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj",
+  "projectFilePath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.Api\\SantanderLeasing.DotnetCore.Api.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

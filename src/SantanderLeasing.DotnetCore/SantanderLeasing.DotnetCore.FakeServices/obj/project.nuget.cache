@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+DXTRPwcoTvrj0bS7cSuF/oypVPzraSVa+RdUOVLXLYpLNqD9ioK7Co6IZOTrmPjKRWONBewC71kiIWNrpFg5Q==",
+  "dgSpecHash": "1z+jG9KruZRtQtOPV/Is7+K+jL9jtefj2m8BkzCwhDgOFSMnMYtoIydLkh8LYWylZDyL+ufYcj5b6+WblBlE1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.FakeServices\\SantanderLeasing.DotnetCore.FakeServices.csproj",
+  "projectFilePath": "C:\\Users\\marci\\Projects\\cts-santander-leasing-csharp\\src\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.FakeServices\\SantanderLeasing.DotnetCore.FakeServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

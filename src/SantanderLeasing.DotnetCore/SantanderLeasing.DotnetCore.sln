@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.Api", "SantanderLeasing.DotnetCore.Api\SantanderLeasing.DotnetCore.Api.csproj", "{6B48D0EA-DE9B-4AA1-9534-D1550C5BD10A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore.Api", "SantanderLeasing.DotnetCore.Api\SantanderLeasing.DotnetCore.Api.csproj", "{6B48D0EA-DE9B-4AA1-9534-D1550C5BD10A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.Models", "SantanderLeasing.DotnetCore.Models\SantanderLeasing.DotnetCore.Models.csproj", "{FF36C78E-2E64-4710-80AE-5E6A3880C2B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore.Models", "SantanderLeasing.DotnetCore.Models\SantanderLeasing.DotnetCore.Models.csproj", "{FF36C78E-2E64-4710-80AE-5E6A3880C2B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.IServices", "SantanderLeasing.DotnetCore.IServices\SantanderLeasing.DotnetCore.IServices.csproj", "{5898D02E-9F5A-4E88-85BB-E9F2B06AC1DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore.IServices", "SantanderLeasing.DotnetCore.IServices\SantanderLeasing.DotnetCore.IServices.csproj", "{5898D02E-9F5A-4E88-85BB-E9F2B06AC1DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.FakeServices", "SantanderLeasing.DotnetCore.FakeServices\SantanderLeasing.DotnetCore.FakeServices.csproj", "{DC038F69-37BF-4FC1-B5A9-3D51E215BB7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore.FakeServices", "SantanderLeasing.DotnetCore.FakeServices\SantanderLeasing.DotnetCore.FakeServices.csproj", "{DC038F69-37BF-4FC1-B5A9-3D51E215BB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.ConsoleApp", "SantanderLeasing.DotnetCore.ConsoleApp\SantanderLeasing.DotnetCore.ConsoleApp.csproj", "{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DC038F69-37BF-4FC1-B5A9-3D51E215BB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC038F69-37BF-4FC1-B5A9-3D51E215BB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC038F69-37BF-4FC1-B5A9-3D51E215BB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
