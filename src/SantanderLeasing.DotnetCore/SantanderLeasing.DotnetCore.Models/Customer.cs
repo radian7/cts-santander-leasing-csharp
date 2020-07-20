@@ -1,0 +1,27 @@
+﻿using System;
+
+namespace SantanderLeasing.DotnetCore.Models
+{
+
+    public class Customer : BaseEntity
+    {
+        // snippet: prop + 2 x Tab
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public Gender Gender { get; set; }
+        public bool IsRemoved { get; set; }
+
+        // ctrl + K + D - formatowanie kodu
+
+        public override void Print()
+        {
+            Console.WriteLine($"{FirstName} {LastName} {Gender}");
+        }
+
+        public override void Send()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

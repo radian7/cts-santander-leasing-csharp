@@ -1,0 +1,12 @@
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.deps.json
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.dll
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.pdb
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.dll
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\bin\Debug\netstandard2.0\SantanderLeasing.DotnetCore.Models.pdb
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.csprojAssemblyReference.cache
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.AssemblyInfoInputs.cache
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.AssemblyInfo.cs
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.csproj.CoreCompileInputs.cache
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.csproj.CopyComplete
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.dll
+C:\Users\marci\source\repos\SantanderLeasing.DotnetCore\SantanderLeasing.DotnetCore.IServices\obj\Debug\netstandard2.0\SantanderLeasing.DotnetCore.IServices.pdb

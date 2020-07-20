@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XJ7aRKEXvRwWHkDaAOMkDO0mzcog/glg1Scu9iV7a1DflMBEogKnRs8M7keXdyjcjnMTgjsdrWLaO1kzXQ4fqQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marci\\source\\repos\\SantanderLeasing.DotnetCore\\SantanderLeasing.DotnetCore.IServices\\SantanderLeasing.DotnetCore.IServices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marci\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\marci\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
