@@ -25,10 +25,26 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
                 Console.WriteLine("Send email {0}", message);
             };
 
-            // Wyrażenia lambda -> Linq
+            // Wyrażenia lambda 
+            printer.Log += message => Console.WriteLine("Send post", message);
 
 
-            printer.CalculateCost += CalculateStandardCost;
+           // printer.CalculateCost += CalculateStandardCost;
+
+            // Metoda anonimowa
+            printer.CalculateCost += delegate (int pages)
+            {
+                decimal unitPrice = 1.00m;
+                return pages * unitPrice;
+            };
+
+            // Wyrażenie lambda
+            printer.CalculateCost += numberOfPages =>
+            {
+                decimal unitPrice = 1.00m;
+
+                return numberOfPages * unitPrice;
+            };
 
             printer.Print("Hello World!", 5);
 
