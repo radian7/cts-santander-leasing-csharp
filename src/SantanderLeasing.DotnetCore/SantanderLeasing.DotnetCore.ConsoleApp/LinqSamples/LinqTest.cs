@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 
 namespace SantanderLeasing.DotnetCore.ConsoleApp.LinqSamples
@@ -21,16 +22,26 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.LinqSamples
 
             string color = "Red";
 
-            ICollection<Product> redProducts = new Collection<Product>();
+            //ICollection<Product> redProducts = new Collection<Product>();
 
-            foreach (Product product in products)
-            {
-                if (product.Color == color)
-                {
-                    redProducts.Add(product);
-                }
-            }
+            //foreach (Product product in products)
+            //{
+            //    if (product.Color == color)
+            //    {
+            //        redProducts.Add(product);
+            //    }
+            //}
 
+            ICollection<Product> redProducts = products
+                .Where(p => p.Color == "Red")
+                .OrderBy(p => p.UnitPrice)
+                .ToList();
+
+            // TODO: pobierz produkty, których cena jednostkowa jest powyżej 100 zł
+
+
+
+            // SQL: SELECT Name, Color, UnitPrice from dbo.Products WHERE Color = 'Red'
 
             foreach (Product redProduct in redProducts)
             {
