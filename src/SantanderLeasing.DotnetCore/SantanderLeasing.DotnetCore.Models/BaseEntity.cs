@@ -9,6 +9,6 @@
             System.Console.WriteLine(Id);
         }
                 
-        public abstract void Send();
+       // public abstract void Send();
     }
 }

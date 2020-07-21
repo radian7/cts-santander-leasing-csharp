@@ -1,4 +1,5 @@
-﻿using SantanderLeasing.DotnetCore.ConsoleApp.GenericTypes;
+﻿using SantanderLeasing.DotnetCore.ConsoleApp.ArrayvsList;
+using SantanderLeasing.DotnetCore.ConsoleApp.GenericTypes;
 using SantanderLeasing.DotnetCore.Models;
 using System;
 
@@ -8,6 +9,11 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp
     {
         static void Main(string[] args)
         {
+            QueueStackTest.Test();
+            CollectionTest.Test();
+
+            ArrayTest.Test();
+
             GenericTypesMethodTest();
             GenericTypesClassTest();
         }
