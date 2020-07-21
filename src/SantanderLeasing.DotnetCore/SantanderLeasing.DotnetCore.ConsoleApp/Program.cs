@@ -1,4 +1,5 @@
 ﻿using SantanderLeasing.DotnetCore.ConsoleApp.ArrayvsList;
+using SantanderLeasing.DotnetCore.ConsoleApp.Delegates;
 using SantanderLeasing.DotnetCore.ConsoleApp.ExtensionMethods;
 using SantanderLeasing.DotnetCore.ConsoleApp.GenericTypes;
 using SantanderLeasing.DotnetCore.Models;
@@ -10,6 +11,8 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp
     {
         static void Main(string[] args)
         {
+            DelegatesTest.Test();
+
             ExtensionMethodTest.Test();
 
             QueueStackTest.Test();
