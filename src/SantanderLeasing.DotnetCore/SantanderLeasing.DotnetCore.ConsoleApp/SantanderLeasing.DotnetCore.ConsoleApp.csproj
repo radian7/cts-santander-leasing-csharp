@@ -9,4 +9,8 @@
     <ProjectReference Include="..\SantanderLeasing.DotnetCore.Models\SantanderLeasing.DotnetCore.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Delegates\" />
+  </ItemGroup>
+
 </Project>
