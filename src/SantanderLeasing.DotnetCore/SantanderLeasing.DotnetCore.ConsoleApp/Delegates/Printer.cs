@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
@@ -24,6 +25,11 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
                 Console.WriteLine("Send email {0}", message);
             };
 
+            // Wyrażenia lambda -> Linq
+
+
+            printer.CalculateCost += CalculateStandardCost;
+
             printer.Print("Hello World!", 5);
 
             printer.Log -= LogColorConsole;
@@ -31,6 +37,12 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
 
             printer.Log = null;
             printer.Print("Hello .NET Core!");
+        }
+
+        public static decimal CalculateStandardCost(int pages)
+        {
+            decimal unitPrice = 1.00m;
+            return pages * unitPrice;
         }
 
         public static void EmptyConsole()
@@ -72,6 +84,17 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
 
         public LogDelegate Log;
 
+        public delegate decimal CalculateCostDelegate(int pages);
+
+        public CalculateCostDelegate CalculateCost;
+
+        //public decimal CalculateCost(int pages)
+        //{
+        //    decimal unitPrice = 1.00m;
+
+        //    return pages * unitPrice;
+        //}
+
         public void Print(string content, int pages = 1)
         {
             for (int i = 1; i <= pages; i++)
@@ -83,13 +106,17 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
                 if (Log != null)
                     Log.Invoke(content);
 
-
                 Delegate[] delegates = Log.GetInvocationList();
 
                 //LogConsole(content);
                 //LogColorConsole(content);
                 //LogFile(content);
             }
+
+            decimal? totalAmount = CalculateCost?.Invoke(pages);
+
+            if (totalAmount.HasValue)
+                Console.WriteLine($"Cost {totalAmount}");
         }
 
       
