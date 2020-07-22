@@ -96,13 +96,17 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
    
     public class LaserPrinter
     {
-        public delegate void LogDelegate(string message);
+        //public delegate void LogDelegate(string message);
+        //public LogDelegate Log;
 
-        public LogDelegate Log;
+        public Action<string> Log;
 
-        public delegate decimal CalculateCostDelegate(int pages);
+        //public delegate decimal CalculateCostDelegate(int pages);
+        //public CalculateCostDelegate CalculateCost;
 
-        public CalculateCostDelegate CalculateCost;
+        public Func<int, decimal> CalculateCost;
+
+        public Predicate<int> Filter; // Predicate<int> == Func<int, bool>
 
         //public decimal CalculateCost(int pages)
         //{
@@ -110,6 +114,17 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Delegates
 
         //    return pages * unitPrice;
         //}
+
+
+        public void DoWork(Action<int, string> action)
+        {
+            // before working...
+
+            // wstrzyknieta metoda
+            action.Invoke(100, "Hello");
+
+            // after working....
+        }
 
         public void Print(string content, int pages = 1)
         {
