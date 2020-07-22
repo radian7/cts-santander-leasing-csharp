@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SantanderLeasing.DotnetCore.IServices
 {
@@ -17,8 +18,7 @@ namespace SantanderLeasing.DotnetCore.IServices
 
     // F12 - przejście do definicji
     // ALT+F12 - podejrzenie definicji
-    public interface ICustomerService : IEntityService<Customer>
+    public interface ICustomerService : IEntityService<Customer>, IEntityServiceAsync<Customer>
     {
-
     }
 }

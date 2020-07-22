@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SantanderLeasing.DotnetCore.FakeServices
 {
@@ -44,8 +46,15 @@ namespace SantanderLeasing.DotnetCore.FakeServices
             customers.Add(customer);
         }
 
+        public Task AddAsync(Customer entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Customer> Get()
         {
+            Thread.Sleep(TimeSpan.FromSeconds(5));
+
             return customers;
         }
 
@@ -56,15 +65,35 @@ namespace SantanderLeasing.DotnetCore.FakeServices
             return customers.SingleOrDefault(p => p.Id == id);
         }
 
+        public Task<IEnumerable<Customer>> GetAsync()
+        {
+            return Task.FromResult(Get());
+        }
+
+        public Task<Customer> GetAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Remove(int id)
         {
             customers.Remove(Get(id));
+        }
+
+        public Task RemoveAsync(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Customer customer)
         {
             Remove(customer.Id);
             Add(customer);
+        }
+
+        public Task UpdateAsync(Customer entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

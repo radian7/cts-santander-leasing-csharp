@@ -18,7 +18,11 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Tasks
 
             // SyncCalculateTest();
 
-            TaskCalculateTest();
+            ParallerWhenAllTasksTest();
+
+            // AsyncAwaitTest();
+
+            // TaskCalculateTest();
 
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
@@ -72,16 +76,6 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Tasks
                     .ContinueWith(t => Console.WriteLine(t.Result));
         }
 
-        private static Task<decimal> CalculateTask(int pages)
-        {
-            return Task.Run(() => Calculate(pages));
-        }
-
-        private static Task<decimal> CalculateTaxTask(decimal amount)
-        {
-            return Task.Run(() => CalculateTax(amount));
-        }
-
         private static void SyncCalculateTest()
         {
             int pages = 10;
@@ -92,6 +86,76 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Tasks
 
             Console.WriteLine(cost);
         }
+
+        // wykonanie sekwencyjne
+        private static async void AsyncAwaitTest()
+        {
+            Console.WriteLine($"#{ThreadId} Test 1");
+            await AsyncAwaitCalculateTestAsync();
+
+            Console.WriteLine($"#{ThreadId} Test 2");
+            await AsyncAwaitCalculateTestAsync();
+
+            Console.WriteLine("Press any key to exit from AsyncAwaitTest.");
+            Console.ReadKey();
+        }
+
+        // wykonanie równolegle
+        private static void ParallerTasksTest()
+        {
+            Console.WriteLine($"#{ThreadId} Test 1");
+            AsyncAwaitCalculateTestAsync();
+
+            Console.WriteLine($"#{ThreadId} Test 2");
+            AsyncAwaitCalculateTestAsync();
+
+            Console.WriteLine("Press any key to exit from AsyncAwaitTest.");
+            Console.ReadKey();
+        }
+
+        // Thread, ThreadPool
+
+        // TPL Task Paraller Library
+        private static async void ParallerWhenAllTasksTest()
+        {
+            Console.WriteLine($"#{ThreadId} Test 1");
+            Task task1 = AsyncAwaitCalculateTestAsync();
+
+            Console.WriteLine($"#{ThreadId} Test 2");
+            Task task2 = AsyncAwaitCalculateTestAsync();
+
+            // blokuje Task.WaitAll(task1, task2);
+
+            await Task.WhenAll(task1, task2);
+
+            Console.WriteLine("Press any key to exit from AsyncAwaitTest.");
+            Console.ReadKey();
+        }
+
+        private static async Task AsyncAwaitCalculateTestAsync()
+        {
+            int pages = 10;
+
+            decimal cost = await CalculateTask(pages);
+
+            Console.WriteLine("Do work");
+
+            cost = await CalculateTaxTask(cost); 
+
+            Console.WriteLine(cost);
+        }
+
+        private static Task<decimal> CalculateTask(int pages)
+        {
+            return Task.Run(() => Calculate(pages));
+        }
+
+        private static Task<decimal> CalculateTaxTask(decimal amount)
+        {
+            return Task.Run(() => CalculateTax(amount));
+        }
+
+       
 
         private static decimal CalculateTax(decimal amount)
         {
