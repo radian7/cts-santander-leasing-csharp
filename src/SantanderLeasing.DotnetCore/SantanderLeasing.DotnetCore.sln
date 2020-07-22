@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore.FakeServices", "SantanderLeasing.DotnetCore.FakeServices\SantanderLeasing.DotnetCore.FakeServices.csproj", "{DC038F69-37BF-4FC1-B5A9-3D51E215BB7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.ConsoleApp", "SantanderLeasing.DotnetCore.ConsoleApp\SantanderLeasing.DotnetCore.ConsoleApp.csproj", "{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SantanderLeasing.DotnetCore.ConsoleApp", "SantanderLeasing.DotnetCore.ConsoleApp\SantanderLeasing.DotnetCore.ConsoleApp.csproj", "{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantanderLeasing.DotnetCore.DbServices", "SantanderLeasing.DotnetCore.DbServices\SantanderLeasing.DotnetCore.DbServices.csproj", "{404E856C-77B8-49BE-B731-E8F3A7E936BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08CDAE3D-7858-43EF-B88D-C9BA2E9958FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404E856C-77B8-49BE-B731-E8F3A7E936BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404E856C-77B8-49BE-B731-E8F3A7E936BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404E856C-77B8-49BE-B731-E8F3A7E936BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404E856C-77B8-49BE-B731-E8F3A7E936BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
