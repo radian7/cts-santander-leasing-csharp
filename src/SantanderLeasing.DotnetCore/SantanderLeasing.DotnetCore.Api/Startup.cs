@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SantanderLeasing.DotnetCore.FakeServices;
+using SantanderLeasing.DotnetCore.IServices;
+using SantanderLeasing.DotnetCore.Models;
 
 namespace SantanderLeasing.DotnetCore.Api
 {
@@ -26,6 +29,10 @@ namespace SantanderLeasing.DotnetCore.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSingleton<ICustomerService, FakeCustomerService>();
+
+            services.Configure<CustomerOptions>(Configuration.GetSection("CustomerOptions"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +43,10 @@ namespace SantanderLeasing.DotnetCore.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            int customerCount = int.Parse(Configuration["CustomerCount"]);
+
+            string url = Configuration["CustomerModule:Uri"];
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -44,6 +55,7 @@ namespace SantanderLeasing.DotnetCore.Api
 
             app.UseEndpoints(endpoints =>
             {
+                // endpoints.MapGet("/hello", )
                 endpoints.MapControllers();
             });
         }

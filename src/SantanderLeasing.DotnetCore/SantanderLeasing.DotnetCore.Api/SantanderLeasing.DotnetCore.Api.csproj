@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SantanderLeasing.DotnetCore.FakeServices\SantanderLeasing.DotnetCore.FakeServices.csproj" />
     <ProjectReference Include="..\SantanderLeasing.DotnetCore.IServices\SantanderLeasing.DotnetCore.IServices.csproj" />
     <ProjectReference Include="..\SantanderLeasing.DotnetCore.Models\SantanderLeasing.DotnetCore.Models.csproj" />
   </ItemGroup>
