@@ -3,6 +3,7 @@ using SantanderLeasing.DotnetCore.ConsoleApp.Delegates;
 using SantanderLeasing.DotnetCore.ConsoleApp.ExtensionMethods;
 using SantanderLeasing.DotnetCore.ConsoleApp.GenericTypes;
 using SantanderLeasing.DotnetCore.ConsoleApp.LinqSamples;
+using SantanderLeasing.DotnetCore.ConsoleApp.Serialization;
 using SantanderLeasing.DotnetCore.ConsoleApp.Tasks;
 using SantanderLeasing.DotnetCore.Models;
 using System;
@@ -13,7 +14,11 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp
     {
         static void Main(string[] args)
         {
-            TaskTest.Test();
+            JsonTest.Test();
+
+            XmlTest.Test();
+
+           // TaskTest.Test();
 
             //LinqTest.Test();
             //DelegatesTest.Test();

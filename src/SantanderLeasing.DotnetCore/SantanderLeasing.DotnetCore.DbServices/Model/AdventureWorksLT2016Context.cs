@@ -761,10 +761,10 @@ namespace SantanderLeasing.DotnetCore.DbServices.Model
                     .HasForeignKey(d => d.BillToAddressId)
                     .HasConstraintName("FK_SalesOrderHeader_Address_BillTo_AddressID");
 
-                entity.HasOne(d => d.Customer)
-                    .WithMany(p => p.SalesOrderHeader)
-                    .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull);
+                //entity.HasOne(d => d.Customer)
+                //    .WithMany(p => p.SalesOrderHeader)
+                //    .HasForeignKey(d => d.CustomerId)
+                //    .OnDelete(DeleteBehavior.ClientSetNull);
 
                 entity.HasOne(d => d.ShipToAddress)
                     .WithMany(p => p.SalesOrderHeaderShipToAddress)

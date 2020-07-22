@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SantanderLeasing.DotnetCore.DbServices;
+using SantanderLeasing.DotnetCore.DbServices.Model;
 using SantanderLeasing.DotnetCore.FakeServices;
 using SantanderLeasing.DotnetCore.IServices;
 using SantanderLeasing.DotnetCore.Models;
@@ -31,6 +34,13 @@ namespace SantanderLeasing.DotnetCore.Api
             services.AddControllers();
 
             services.AddSingleton<ICustomerService, FakeCustomerService>();
+            services.AddScoped<IOrderService, DbOrderService>();
+
+
+            string connectionString = Configuration.GetConnectionString("MyConnection");
+
+            services.AddDbContext<AdventureWorksLT2016Context>(
+                options => options.UseSqlServer(connectionString));
 
             services.Configure<CustomerOptions>(Configuration.GetSection("CustomerOptions"));
         }

@@ -8,7 +8,7 @@ namespace SantanderLeasing.DotnetCore.DbServices.Model
         public Customer1()
         {
             CustomerAddress = new HashSet<CustomerAddress>();
-            SalesOrderHeader = new HashSet<SalesOrderHeader>();
+            //SalesOrderHeader = new HashSet<SalesOrderHeader>();
         }
 
         public int Id { get; set; }
@@ -28,6 +28,6 @@ namespace SantanderLeasing.DotnetCore.DbServices.Model
         public DateTime ModifiedDate { get; set; }
 
         public virtual ICollection<CustomerAddress> CustomerAddress { get; set; }
-        public virtual ICollection<SalesOrderHeader> SalesOrderHeader { get; set; }
+        // public virtual ICollection<SalesOrderHeader> SalesOrderHeader { get; set; }
     }
 }
