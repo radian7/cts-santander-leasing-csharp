@@ -33,10 +33,17 @@ namespace SantanderLeasing.DotnetCore.Api.Controllers
         //    };
         //}
 
+        //[HttpGet]
+        //public IEnumerable<Customer> Get()
+        //{
+        //    IEnumerable<Customer> customers = customerService.Get();
+        //    return customers;
+        //}
+
         [HttpGet]
-        public IEnumerable<Customer> Get()
+        public async Task<IEnumerable<Customer>> Get()
         {
-            IEnumerable<Customer> customers = customerService.Get();
+            IEnumerable<Customer> customers = await customerService.GetAsync();
             return customers;
         }
     }
