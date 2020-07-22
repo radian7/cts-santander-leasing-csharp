@@ -1,1 +1,1 @@
-# cts-santander-leasing-csharp
+# Przykłady ze szkolenia Język z C# w .NET Core
