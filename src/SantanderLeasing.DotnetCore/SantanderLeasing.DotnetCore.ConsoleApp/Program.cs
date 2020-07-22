@@ -3,6 +3,7 @@ using SantanderLeasing.DotnetCore.ConsoleApp.Delegates;
 using SantanderLeasing.DotnetCore.ConsoleApp.ExtensionMethods;
 using SantanderLeasing.DotnetCore.ConsoleApp.GenericTypes;
 using SantanderLeasing.DotnetCore.ConsoleApp.LinqSamples;
+using SantanderLeasing.DotnetCore.ConsoleApp.Tasks;
 using SantanderLeasing.DotnetCore.Models;
 using System;
 
@@ -12,18 +13,20 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp
     {
         static void Main(string[] args)
         {
-            LinqTest.Test();
-            DelegatesTest.Test();
+            TaskTest.Test();
 
-            ExtensionMethodTest.Test();
+            //LinqTest.Test();
+            //DelegatesTest.Test();
 
-            QueueStackTest.Test();
-            CollectionTest.Test();
+            //ExtensionMethodTest.Test();
 
-            ArrayTest.Test();
+            //QueueStackTest.Test();
+            //CollectionTest.Test();
 
-            GenericTypesMethodTest();
-            GenericTypesClassTest();
+            //ArrayTest.Test();
+
+            //GenericTypesMethodTest();
+            //GenericTypesClassTest();
         }
 
         static void GenericTypesMethodTest()
