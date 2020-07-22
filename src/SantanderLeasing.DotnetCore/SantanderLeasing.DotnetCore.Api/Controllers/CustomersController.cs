@@ -12,7 +12,12 @@ namespace SantanderLeasing.DotnetCore.Api.Controllers
     //[Route("api/klienci")]
     public class CustomersController : ControllerBase
     {
-        private ICustomerService customerService;
+        private readonly ICustomerService customerService;
+
+        public CustomersController(ICustomerService customerService)
+        {
+            this.customerService = customerService;
+        }
 
         //[HttpGet]
         //public Customer Get()
