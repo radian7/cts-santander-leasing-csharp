@@ -38,7 +38,7 @@ namespace SantanderLeasing.DotnetCore.Api
             services.AddSingleton<ICustomerService, FakeCustomerService>();
             services.AddScoped<IOrderService, DbOrderService>();
 
-            services.AddSingleton<IProductService, FakeProductService>();
+            services.AddSingleton<IServices.IProductService, FakeProductService>();
             services.AddSingleton<Faker<Models.Product>, ProductFaker>();
 
 
