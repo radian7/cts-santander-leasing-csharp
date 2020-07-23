@@ -8,18 +8,36 @@ using System.Xml.Serialization;
 namespace SantanderLeasing.DotnetCore.ConsoleApp.Serialization
 {
 
+
     public class XmlTest
     {
         public static void Test()
         {
-            DeserializationTest();
-            SerializationTest();
+            //DeserializationTest();
+            //SerializationTest();
+
+            GenericSerializeTest();
+            GenericDeserializeTest();
         }
+
+        private static void GenericSerializeTest()
+        {
+            Product product = CreateProduct();
+
+            XmlGenericSerializer serializer = new XmlGenericSerializer();
+            serializer.Serialize(product, "products.xml");
+        }
+
+        private static void GenericDeserializeTest()
+        {
+            XmlGenericSerializer serializer = new XmlGenericSerializer();
+            Product product = serializer.Deserialize<Product>("products.xml");
+        }
+
 
         public static void SerializationTest()
         {
-
-            Product product = new Product { Id = 1, Name = "Product 1", Color = "Red", UnitPrice = 1.99m };
+            Product product = CreateProduct();
 
             XmlSerializer serializer = new XmlSerializer(typeof(Product));
 
@@ -32,6 +50,11 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Serialization
 
             // ....
 
+        }
+
+        private static Product CreateProduct()
+        {
+            return new Product { Id = 1, Name = "Product 1", Color = "Red", UnitPrice = 1.99m };
         }
 
         public static void DeserializationTest()
