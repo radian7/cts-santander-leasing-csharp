@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bogus;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using SantanderLeasing.DotnetCore.DbServices;
 using SantanderLeasing.DotnetCore.DbServices.Model;
 using SantanderLeasing.DotnetCore.FakeServices;
+using SantanderLeasing.DotnetCore.FakeServices.Fakers;
 using SantanderLeasing.DotnetCore.IServices;
 using SantanderLeasing.DotnetCore.Models;
 
@@ -35,6 +37,9 @@ namespace SantanderLeasing.DotnetCore.Api
 
             services.AddSingleton<ICustomerService, FakeCustomerService>();
             services.AddScoped<IOrderService, DbOrderService>();
+
+            services.AddSingleton<IProductService, FakeProductService>();
+            services.AddSingleton<Faker<Models.Product>, ProductFaker>();
 
 
             string connectionString = Configuration.GetConnectionString("MyConnection");
