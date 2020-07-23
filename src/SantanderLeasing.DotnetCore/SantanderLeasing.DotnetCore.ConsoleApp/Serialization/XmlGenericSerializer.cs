@@ -16,7 +16,19 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Serialization
             }
         }
 
-        public T Deserialize<T>(string filename)
+        public string Serialize<T>(T item)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+
+            using (StringWriter writer = new StringWriter())
+            {
+                serializer.Serialize(writer, item);
+
+                return writer.ToString();
+            }
+        }
+
+        public T DeserializeFile<T>(string filename)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
 
@@ -25,6 +37,18 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Serialization
                 return (T)serializer.Deserialize(reader);
             }
         }
+
+        public T Deserialize<T>(string xml)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+
+            using (StringReader reader = new StringReader(xml))
+            {
+                return (T)serializer.Deserialize(reader);
+            }
+        }
+
+
     }
 
     

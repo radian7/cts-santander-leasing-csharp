@@ -16,11 +16,26 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Serialization
             //DeserializationTest();
             //SerializationTest();
 
-            GenericSerializeTest();
-            GenericDeserializeTest();
+            GenericSerializeToFileTest();
+            GenericDeserializeFromFileTest();
+
+            GenericSerializeToTextTest();
+            GenericDeserializeFromTextTest();
+
+      
         }
 
-        private static void GenericSerializeTest()
+        private static void GenericSerializeToTextTest()
+        {
+            Product product = CreateProduct();
+
+            XmlGenericSerializer serializer = new XmlGenericSerializer();
+            string xml = serializer.Serialize(product);
+
+            Console.WriteLine(xml);
+        }
+
+        private static void GenericSerializeToFileTest()
         {
             Product product = CreateProduct();
 
@@ -28,12 +43,18 @@ namespace SantanderLeasing.DotnetCore.ConsoleApp.Serialization
             serializer.Serialize(product, "products.xml");
         }
 
-        private static void GenericDeserializeTest()
+        private static void GenericDeserializeFromFileTest()
         {
             XmlGenericSerializer serializer = new XmlGenericSerializer();
-            Product product = serializer.Deserialize<Product>("products.xml");
+            Product product = serializer.DeserializeFile<Product>("products.xml");
         }
 
+        private static void GenericDeserializeFromTextTest()
+        {
+            string xml = "<Produkt color=\"Red\"><Id>1</Id><Name>Product 1</Name><UnitPrice>1.99</UnitPrice></Produkt>";
+            XmlGenericSerializer serializer = new XmlGenericSerializer();
+            Product product = serializer.Deserialize<Product>(xml);
+        }
 
         public static void SerializationTest()
         {
