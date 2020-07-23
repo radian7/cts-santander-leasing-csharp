@@ -29,7 +29,7 @@ namespace SantanderLeasing.DotnetCore.Api.Controllers
 
         // GET api/orders/10
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetById")]
         public IActionResult Get(int id)
         {
             SalesOrderHeader order = orderService.Get(id);
@@ -46,7 +46,33 @@ namespace SantanderLeasing.DotnetCore.Api.Controllers
         {
             orderService.Add(order);
 
-            return Created("", order);
+            return CreatedAtAction("GetById", new { Id = order.SalesOrderId }, order);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, SalesOrderHeader order)
+        {
+
+            if (id != order.SalesOrderId)
+                return BadRequest();
+            try
+            {
+                orderService.Update(order);
+            }
+            catch (InvalidOperationException e)
+            {
+                return BadRequest(e.Message);
+            }
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            orderService.Remove(id);
+
+            return NoContent();
         }
 
     }
